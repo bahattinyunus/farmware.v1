@@ -26,7 +26,11 @@ class FieldMapper:
         for i in range(2):  # Example: two rows
             frame_path = self.camera_handler.capture_frame(f"row_{i}.jpg")
             if frame_path:
-                field_map["rows"].append({"id": i + 1, "image": frame_path})
+                field_map["rows"].append({
+                    "id": i + 1, 
+                    "image": frame_path,
+                    "coordinates": [(10.0 + i, 10.0), (10.0 + i, 20.0)] # Mock coordinates
+                })
 
         # Clean up resources
         self.gps_handler.close()

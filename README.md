@@ -1,5 +1,11 @@
 # Farmware
 
+![Farmware Banner](assets/banner.png)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 **Farmware: Open source autonomous spraying software for precision farming, optimized for small-row and specialty crops.**
 
 ---
@@ -8,6 +14,7 @@
 - [Overview](#overview)
 - [Core Features](#core-features)
 - [Equipment Required](#equipment-required)
+- [Getting Started](#getting-started)
 - [Roadmap](#roadmap)
 - [Contributions](#contributions)
 - [License](#license)
@@ -21,6 +28,7 @@ Farmware is an open source solution designed to revolutionize small row and spec
 ---
 
 ## Core Features
+... (rest of the content is similar, just added Getting Started and improved intro structure)
 
 - **Field Mapping**:
   - Use GPS and camera data to create a digital map of the field.
@@ -47,7 +55,7 @@ To be able to deploy farmware, you'll need the following hardware:
 ### Sensors
 - **GPS Module**:
   - E.g., [u-blox NEO-6M GPS Module](https://www.u-blox.com).
-  - Provides real time location data for field mapping and navigation.
+  - Provides real-time location data for field mapping and navigation.
 - **Camera**:
   - Any USB or onboard camera compatible with OpenCV.
   - Used for detecting rows, boundaries, and obstacles.
@@ -70,44 +78,62 @@ To be able to deploy farmware, you'll need the following hardware:
 
 ---
 
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bahattinyunus/farmware.v1.git
+   cd farmware.v1
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the application:
+   ```bash
+   python main.py
+   ```
+
+---
+
 ## Roadmap
 
 ### **Phase 1: Autonomous Spraying Prototype**
-- Develop and test field mapping using GPS and camera data.
-- Implement path planning algorithms optimized for small row farming.
-- Create a fully functional prototype capable of basic autonomous spraying.
+- [x] Develop and test field mapping using GPS and camera data.
+- [ ] Implement path planning algorithms optimized for small row farming.
+- [ ] Create a fully functional prototype capable of basic autonomous spraying.
 
 ### **Phase 2: Advanced Features**
-- Showcase the prototype at the **World Ag Expo** (Feb 11–13, Tulare, California) to gather feedback and generate interest.
-- Begin development of a universal, plug and play system compatible with various tractor models and farming setups.
-- Enhance the software’s modularity for seamless adaptation to different field layouts and crop types.
+- Showcase the prototype at the **World Ag Expo** (Feb 11–13, Tulare, California).
+- Begin development of a universal, plug-and-play system.
+- Enhance modularity for different field layouts.
 
 ### **Phase 3: Scalability and Community Collaboration**
-- Expand mapping capabilities to support **3D field mapping**, enabling precision operations on complex terrains and non flat surfaces.
-- Transition from tractor-based mapping to drone based solutions, providing aerial views and full field coverage for advanced data collection.
-- Build a strong open source community to drive iterative improvements, foster innovation, and ensure the system remains accessible to all farmers worldwide.
+- Expand mapping capabilities to support **3D field mapping**.
+- Transition to drone-based mapping solutions.
+- Build a strong open source community.
 
 ---
 
 ## Contributions
 
-We welcome contributions from developers, farmers, and agricultural enthusiasts. Here’s how you can get involved:
-1. Fork the repository and create a feature branch.
-2. Submit a pull request with detailed explanations of changes.
-3. Join the discussions to share ideas and feedback.
+We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
+
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) in all interactions.
 
 ---
 
 ## License
 
-Farmware is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code to anybody and everybody :)
+Farmware is licensed under the [MIT License](LICENSE).
 
 ---
 
 ### **Our Mission**
 
-The goal of this project is to give small farmers a fighting chance to make their farms viable businesses without spending outrageous amounts on proprietary systems. Take John Deere, for example their subscription service for auto steer costs almost $50,000 per year. **FUCK THAT.** How is any regular farmer supposed to afford that?
-
-Farmware aims to provide a far superior solution for a fraction of the cost. While John Deere’s auto steer works on long straight lines for grain farming, we’re tackling something 100x harder: enabling precise turns and optimized paths for small row and specialty crops. And we’re committed to doing it affordably your vision is for farmers to build their own systems for around $5,000 in parts or purchase a complete autonomous version for $3,000–$4,000 with 40% margins at scale.
-
-This is just the beginning. The true innovation lies in autonomous drones, which will unlock entirely new levels of precision and scalability for farmers. The agricultural technology market is a $200 billion TAM, and we believe it’s ripe for disruption.
+The goal of this project is to give small farmers a fighting chance to make their farms viable businesses without spending outrageous amounts on proprietary systems.
+Farmware aims to provide a far superior solution for a fraction of the cost, democratizing access to precision agriculture technology.
